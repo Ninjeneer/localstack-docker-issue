@@ -1,0 +1,6 @@
+aws_region    = "eu-north-1"
+supabase_url  = "http://host.docker.internal:54321"
+supabase_key  = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImV4cCI6MTk4MzgxMjk5Nn0.EGIM96RAZx35lJzdJsyH-qQwv8Hdp7fsn3W0YpN81IU"
+mongo_uri     = "mongodb://mongo:27017"
+mongo_db_name = "zenpass"
+frontend_url  = "http://localhost:3000"

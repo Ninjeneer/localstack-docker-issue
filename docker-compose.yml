@@ -1,0 +1,20 @@
+services:
+  localstack:
+    image: localstack/localstack-pro
+    ports:
+      - '4566:4566'
+    environment:
+      - SERVICES=lambda,apigateway,s3,logs,iam,ecs,ecr,cloudwatch
+      - DEBUG=1
+      - PERSISTENCE=1
+      - DOCKER_SOCK=/var/run/docker.sock
+      - LAMBDA_DOCKER_FLAGS=-e LOCALSTACK_INIT_LOG_LEVEL=debug
+    networks:
+      - zenpass
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+networks:
+  zenpass:
+    external:
+      name: zenpass

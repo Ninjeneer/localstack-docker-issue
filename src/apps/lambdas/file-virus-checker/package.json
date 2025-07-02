@@ -1,0 +1,22 @@
+{
+	"name": "file-virus-checker",
+	"version": "1.0.0",
+	"description": "Lambda function for virus scanning files using ClamAV",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.6.1",
+	"dependencies": {
+		"@aws-sdk/client-s3": "^3.830.0",
+		"@supabase/supabase-js": "^2.50.0",
+		"mongoose": "^8.16.0"
+	},
+	"devDependencies": {
+		"@types/aws-lambda": "^8.10.0",
+		"typescript": "^5.0.0"
+	}
+}
