@@ -21,7 +21,5 @@ RUN pnpm run build
 # Update virus definitions
 RUN freshclam
 
-COPY ./handler.js ${LAMBDA_TASK_ROOT}
-
 # Set handler
 CMD [ "handler.handler" ]
